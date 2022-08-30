@@ -1,0 +1,1 @@
+<?php  $db = new PDO ('mysql:host=localhost;dbname=pokemonjohto;charset=UTF8','root','') ;  ?>
