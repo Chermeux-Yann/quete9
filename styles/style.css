@@ -9,6 +9,7 @@ header{
 }
 .jumbotron{
     background-color: black; 
+  
 }
 .jumbotron img{
 width: 100%;
@@ -28,7 +29,7 @@ width: 100%;
 
 }
 .card-body strong{
-    margin-left: 70px;  
+    margin-left: 50px;  
 }
 
 .cardpokedex{

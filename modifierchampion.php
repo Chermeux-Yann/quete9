@@ -35,7 +35,7 @@
 </div>
 <input type="file" id="imgchamp"  name="imgchamp" required >
 
-  <input type="submit" name="submitchamp" class="btn btn-dark">envoyer
+<p>image du champion</p><input type="submit" name="submitchamp" class="btn btn-dark">envoyer
 </form>
 <?php
 };

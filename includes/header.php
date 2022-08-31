@@ -15,10 +15,10 @@
         <a class="nav-link btn btn-light" href="index.php?poke">Pokémon </a>
       </li>
       <li class="nav-item  ml-3">
-        <a class="nav-link btn btn-warning" href="index.php?form2">Ajoute un Champion  </a>
+        <a class="nav-link btn btn-warning" href="index.php?formchampion">Ajoute un Champion  </a>
       </li>
       <li class="nav-item  ml-3">
-        <a class="nav-link btn btn-warning" href="index.php?form">Ajoute un Pokémon</a>
+        <a class="nav-link btn btn-warning" href="index.php?formpokemon">Ajoute un Pokémon</a>
       </li>
     </ul>
   </div>
@@ -27,7 +27,7 @@
 
 <div class="jumbotron ">
   <div class="container">
-    <img src="img/starter.png" alt="">
+    <img src="img/starter.png" >
    
   </div>
 </div>

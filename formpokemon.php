@@ -17,8 +17,8 @@
     <label for="type">Type2</label>
     <input type="text" class="form-control" name="type2" placeholder="Type du pokémon" >
   </div>
-<input type="file" id="image" name="imagepokemon"  required>
-<input type="file" id="image2" name="imagepokemonnew"  required>
+  <p>première image</p><input type="file" id="image" name="imagepokemon"  required>
+  <p>deuxieme image</p><input type="file" id="image2" name="imagepokemonnew"  required>
 
     <input type="submit" name="sub" class="btn btn-dark">envoyer
 </form>

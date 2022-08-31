@@ -1,19 +1,21 @@
 
 
-<div class="fichep card container "  >
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img class="ml-5 my-5 " src="<?php   echo $pokemon['newimg']; ?> "  style="width: 15rem;  height:15rem;" alt="pokemon">
+<div class=" card container col-9"  >
+  <div class="row no-gutters ">
+    <div class=" col-md-4 ">
+      <img class="ml-2 my-5 " src="<?php   echo $pokemon['newimg']; ?> "  style="width: 12rem;  height:12rem;" alt="pokemon">
     </div>
     <div class="col-md-8">
       <div class="card-body ">
         
-        <p class="card-text"><strong>Nom:  </strong> <?php  echo $pokemon['numero'] ;?></p>
-        <p class="card-text"><strong>Numéro:  </strong> <?php  echo $pokemon['first_name'] ;?></p>
-        <p class="card-text"><strong>Type: </strong> <?php  echo $pokemon['type1'] ;?></p>
-        <p class="card-text"> <strong>Type:</strong> <?php echo $pokemon['type2']; ?>  </p>
-        <p class="card-text"><strong>Id:  </strong> <?php  echo $pokemon['id'] ;?></p>
+        <p class="card-text"><strong>Numéro:  </strong> <?php  echo htmlspecialchars( $pokemon['numero']) ;?></p>
+        <p class="card-text"><strong>Nom:  </strong> <?php  echohtmlspecialchars( $pokemon['first_name']) ;?></p>
+        <p class="card-text"><strong>Type: </strong> <?php  echohtmlspecialchars( $pokemon['type1'] );?></p>
+        <p class="card-text"> <strong>Type:</strong> <?php echo htmlspecialchars($pokemon['type2']); ?>  </p>
+        <p class="card-text"><strong>Id:  </strong> <?php  echohtmlspecialchars( $pokemon['id']) ;?></p>
       </div>
+     
+     
      <a href="index.php?modifier=<?php echo $pokemon['id']?>"><button type="button" name="modifpokemon" class="btn btn-dark  ml-5"> Modifier</button></a> 
      <!-- Button trigger modal -->
 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">

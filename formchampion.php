@@ -1,5 +1,5 @@
 
-<form action="index.php"  method="POST"  class="form col-6"  enctype="multipart/form-data">
+<form action="index.php"  method="POST"  class="form col-9"  enctype="multipart/form-data">
   <div class="form-group  ">
   <label for="numéro">Ville</label>
     <input type="text" class="form-control" name="numc" required>
@@ -18,5 +18,5 @@
   </div>
   <input type="file" id="image" name="img"  >
 
-    <input type="submit" name="subchampion" class="btn btn-dark">envoyer
+  <p>image du champion</p><input type="submit" name="subchampion" class="btn btn-dark">envoyer
 </form>

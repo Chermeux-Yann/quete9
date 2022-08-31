@@ -1,25 +1,27 @@
 
 
-<div class="fichep card container "  >
+<div class=" card container "  >
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img class="ml-5 my-5 " src="<?php   echo $champion['image']; ?> "  style="width: 15rem;  height:15rem;" alt="pokemon">
+      <img class="ml-2 my-5 " src="<?php   echo $champion['image']; ?> "  style="width: 15rem;  height:15rem;" alt="pokemon">
     </div>
     <div class="col-md-8">
       <div class="card-body ">
         
-        <p class=" card-text"><strong>Ville:  </strong> <?php  echo $champion['ville'] ;?></p>
-        <p class="card-text"><strong>Champion:  </strong> <?php  echo $champion['champion'] ;?></p>
-        <p class="card-text"><strong>Type: </strong> <?php  echo $champion['type'] ;?></p>
-        <p class="card-text"> <strong>Badge: </strong> <?php echo $champion['badge']; ?>  </p>
-        <p class="card-text"><strong>Id:  </strong> <?php  echo $champion['id'] ;?></p>
+        <p class=" card-text"><strong>Ville:  </strong> <?php echo  htmlspecialchars( $champion['ville']) ;?></p>
+        <p class="card-text"><strong>Champion:  </strong> <?php  echo  htmlspecialchars( $champion['champion']) ;?></p>
+        <p class="card-text"><strong>Type: </strong> <?php  echo  htmlspecialchars( $champion['type']) ;?></p>
+        <p class="card-text"> <strong>Badge: </strong> <?php echo  htmlspecialchars( $champion['badge']); ?>  </p>
+        <p class="card-text"><strong>Id:  </strong> <?php  echo  htmlspecialchars( $champion['id']) ;?></p>
       </div>
-     <a href="index.php?modifierchamp=<?php echo $champion['id']?>"><button type="button" name="modifchampion" class="btn btn-dark"> Modifier</button></a> 
+    
+      
+     <a href="index.php?modifierchamp=<?php echo $champion['id']?>"><button type="button" name="modifchampion" class="btn btn-dark ml-5"> Modifier</button></a> 
 
 
 
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-danger " data-toggle="modal" data-target="#exampleModal">
   supprimer
 </button>
 
