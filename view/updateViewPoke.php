@@ -1,23 +1,12 @@
-<?php 
-    if(isset($_GET['modifier'])){
-        $sql= 'SELECT * FROM `pokemon` where id= :id';
-        $prepare = $db->prepare($sql);
-        $prepare->execute(
-            [
-                'id' => $_GET['modifier']
-            ]
-            );
-        $list= $prepare->fetchAll();
-        foreach($list as $value){
+<?php  ob_start(); ?>
 
-  
-?>
+<div class="container-fluid row ">
 
 <form action="index.php"  method="POST" enctype="multipart/form-data" class="form col-6" >
 
 
 <div class="form-group  ">
-    <input type="hidden" name="id" value="<?php   echo $_GET['modifier']; ?>">
+    <input type="hidden" name="id" value="">
 <label for="numéro">numéro</label>
   <input type="number" class="form-control" id="num" aria-describedby="emailHelp" name="nummodif" placeholder="Nom" required>
 </div>
@@ -34,11 +23,13 @@
   <input type="text" class="form-control" name="type2modif" placeholder="Type du pokémon"  >
 </div>
 <p>première image</p><input type="file" id="image" name="imagepokemon" required >
-<p>deuxieme image</p><input type="file" id="image2" name="imagepokemonnew" required >
+<p>deuxieme image</p><input type="file" id="image2" name="imagepokemonnew" required  >
+<input type="hidden" name="id" value="<?= $_GET['update']; ?>">
 
-  <input type="submit" name="submitpoke" class="btn btn-dark">envoyer
-</form>
+  <input type="submit" name="updatepoke" class="btn btn-dark" value="Envoyer">
+
+
 <?php
-};
-    }
-    ?>
+$content = ob_get_clean();
+require 'view/template.php';
+?>
